@@ -6,7 +6,7 @@
     <title>Gaming Zonenull null null</title>
     <link rel="stylesheet" href="../style/style.css">
     <link rel="icon" href="../src/logo.png">
-    <script src="../script/test.js" defer></script>
+    <script type="module" src="../script/game/app.js" defer></script>
 </head>
 <body>
     <!-- Zone du menu, en haut de la page-->
@@ -28,19 +28,8 @@
         <h3>Je kiff le JavaScript!</h3>
     </header>
     <!-- Zone principale -->
-    <div id="main-game">
-        <div id="user-interface">
-            <div>
-                <label for="user-number">Entrez un nombre entre 1 et 100</label>            
-                <input id="user-number" name="user-number" type="number" placeholder="Votre nombre ici" min="1" max="100" >
-            </div>
-               
-            <input id="send-button" type="submit" value="Proposer"> 
-        </div>
-        <div id="game-display">
-
-        </div>
-    </div>
+    <div id="game-main"></div>
+    <div id="game-menu"></div>
    
 </body>
 </html>
