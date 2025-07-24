@@ -150,3 +150,75 @@ CREATE TABLE IF NOT EXISTS book (
         REFERENCES user(id)
 )ENGINE=InnoDB;
 
+CREATE VIEW book_vw AS (
+    SELECT book.id, book.titre, book.auteur, genre.name AS genre, site.city AS site, book.year AS "année", book.page
+    FROM book
+    INNER JOIN genre ON book.genre_id = genre.id
+    INNER JOIN site ON book.site_id = site.id
+);
+
+SELECT titre, auteur, genre FROM book_vw WHERE site = "Roubaix";
+
+SELECT genre, site, Count(id) AS "nombre" FROM book_vw  WHERE genre = "Policier" OR genre="Roman" GROUP BY genre, site ORDER BY site ASC;
+
+SELECT  MAX(page), genre FROM book_vw GROUP BY genre;
+SELECT titre, page, genre FROM book_vw WHERE page = MAX(page) GROUP BY genre;
+
+UPDATE book
+SET user_id = 2
+WHERE id = 123 or id = 138;
+
+UPDATE book
+SET user_id = 4
+WHERE id = 90;
+
+UPDATE book
+SET user_id = 4
+WHERE id = 104;
+
+UPDATE book
+SET user_id = 4
+WHERE id = 140;
+
+SELECT user.user_name, user.mail, book.titre 
+FROM user
+INNER JOIN book ON book.user_id = user.id;
+
+SELECT user.user_name, user.mail, book.titre 
+FROM user
+LEFT JOIN book ON book.user_id = user.id;
+
+SELECT user.user_name, user.mail, book.titre 
+FROM user
+RIGHT JOIN book ON book.user_id = user.id;
+
+SELECT user.user_name, user.mail, book.titre 
+FROM user
+FULL OUTER JOIN book ON book.user_id = user.id;
+
+/*commentaires*/
+
+CREATE TABLE IF NOT EXISTS comment (
+    comment_content TEXT NOT NULL,
+    user_id SMALLINT UNSIGNED NOT NULL,
+    book_id INT UNSIGNED NOT NULL,
+    PRIMARY KEY (user_id, book_id),
+    CONSTRAINT fk_comment_user
+        FOREIGN KEY (user_id)
+        REFERENCES user(id),
+    CONSTRAINT fk_comment_book
+        FOREIGN KEY (book_id)
+        REFERENCES book(id)
+)ENGINE=InnoDB;
+
+INSERT INTO comment (user_id, book_id, comment_content)
+VALUES  (2, 90, "C'est de la balle"),
+        (3, 111, "Un peu long, mais le passage sur la métamorphose de l'ego est intéressant"),
+        (3, 72, "Lorem Ipsum bla bla...");
+
+CREATE VIEW comment_vw AS (
+    SELECT comment.book_id, book.titre, user.user_name AS utilisateur, comment.comment_content AS commentaire
+    FROM book
+    INNER JOIN comment ON comment.book_id = book.id
+    INNER JOIN user ON comment.user_id = user.id
+);
