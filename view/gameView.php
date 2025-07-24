@@ -3,31 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gaming Zonenull null null</title>
+    <title>Bibliothèque E2C</title>
     <link rel="stylesheet" href="../style/style.css">
     <link rel="icon" href="../src/logo.png">
-    <script src="../script/test.js" defer></script>
+    <script src="../script/news.js" defer></script>
 </head>
+
+
+
+
+
+
+
 <body>
     <!-- Zone du menu, en haut de la page-->
     <nav>
 
         <img id="logo" src="../src/logo2.png" alt="Logo E2C">
         <div id="nav-bar">
-            <a class="nav-button" href="../index.htm">Accueil</a>
-            <a class="nav-button" href="../pages/library.htm">Bibliothèque</a>
-            <a class="nav-button" href="../pages/game.htm">Détente</a>
+            <a class="nav-button" href="../contr./controller/gameController.phpoller/homeController.php">Accueil</a>
+            <a class="nav-button" href="../controller/libraryController.php">Bibliothèque</a>
+            <a class="nav-button" href="../controller/gameController.php">Détente</a>
         </div>
 
     </nav>
-    <!-- En tête stylé-->
-    <header>
-        <h1>Espace détente</h1>
-        
 
-        <h3>Je kiff le JavaScript!</h3>
-    </header>
-    <!-- Zone principale -->
+    <?php
+        require_once("../view/_partials/_header.php");
+    ?>
+    
+   
+    <!--Zone principale -->
     <div id="main-game">
         <div id="user-interface">
             <div>
@@ -37,6 +43,9 @@
                
             <input id="send-button" type="submit" value="Proposer"> 
         </div>
+            
+               
+            
         <div id="game-display">
 
         </div>
@@ -44,3 +53,5 @@
    
 </body>
 </html>
+               
+            

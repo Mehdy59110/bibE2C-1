@@ -1,6 +1,7 @@
-<!DOCTYPE html>
+<!DOCTYPE html>    
 <html lang="fr">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ici on lit!</title>
@@ -10,24 +11,21 @@
 
 </head>
 <body>
-    <!-- Zone du menu, en haut de la page-->
+    <!-- ZoneLa bibliothèque de l'E2C du menu, en haut de la page-->
     <nav>
 
         <img id="logo" src="../src/logo2.png" alt="Logo E2C">
         <div id="nav-bar">
-            <a class="nav-button" href="../index.htm">Accueil</a>
-            <a class="nav-button" href="../pages/library.htm">Bibliothèque</a>
-            <a class="nav-button" href="../pages/game.htm">Détente</a>
+            <a class="nav-button" href="../contr./controller/gameController.phpoller/homeController.php">Accueil</a>
+            <a class="nav-button" href="../controller/libraryController.php">Bibliothèque</a>
+            <a class="nav-button" href="../controller/gameController.php">Détente</a>
         </div>
 
     </nav>
     <!-- En tête stylé-->
-    <header>
-        <h1>Des livres et des histoires !</h1>
-        
-
-        <h3>La bibliothèque de l'E2C</h3>
-    </header>
+    <?php
+        require_once("../view/_partials/_header.php");
+    ?>
     <!-- Zone peincipale -->
    
 </body>
