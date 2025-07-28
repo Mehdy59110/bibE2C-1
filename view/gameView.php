@@ -26,7 +26,7 @@
     
    
     <!--Zone principale -->
-    <div id="main-garequire_once("../view/_partials/_nav.php");me">
+    <div id="main-game">
         <div id="user-interface">
             <div>
                 <label for="user-number">Entrez un nombre entre 1 et 100</label>            
