@@ -13,18 +13,10 @@
    
         
     <!-- Zone du menu, en haut de la page-->
-    <nav>
-
-        <img id="logo" src="../src/logo2.png" alt="Logo E2C">
-        <div id="nav-bar">
-            <a class="nav-button" href="../contr./controller/gameController.phpoller/homeController.php">Accueil</a>
-            <a class="nav-button" href="../controller/libraryController.php">Bibliothèque</a>
-            <a class="nav-button" href="../controller/gameController.php">Détente</a>
-        </div>
-
-    </nav>
+   
     <!-- En tête stylé-->
     <?php
+        require_once("../view/_partials/_nav.php");
         require_once("../view/_partials/_header.php");
     ?>
     <!-- Zone peincipale - présentation de l'e2c et de Silence, On lit-->
@@ -42,6 +34,13 @@
                     <iframe id="video-e2c" src="https://www.youtube.com/embed/q8IXhr6b304?si=qzUDll6jLUhBsHHw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
 
+                        <p>Au-delà de l’apprentissage technique, l’E2C valorise la lecture comme un levier de développement personnel. Lire permet aux jeunes de se reconnecter à leur curiosité, de découvrir des univers variés et de mieux comprendre leur environnement. C’est aussi un moyen de reprendre goût à l’apprentissage, dans un cadre bienveillant où chaque progrès est valorisé. La lecture devient ainsi un fil conducteur vers la reconstruction de soi et l’élaboration d’un avenir choisi.</p>
+                    </div>
+                    <iframe id="video-e2c" src="https://www.youtube.com/embed/q8IXhr6b304?si=qzUDll6jLUhBsHHw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+            </article>
+            <div class="intertext">
             </article>
             <div class="intertext">
                 <h4>Design Fou Fou de Sochaux</h4>
@@ -83,6 +82,13 @@
             <div id="clos<!DOCTYPE html>
 <html lang="fr">
 <head>
+                        <p>Au-delà de l’apprentissage technique, l’E2C valorise la lecture comme un levier de développement personnel. Lire permet aux jeunes de se reconnecter à leur curiosité, de découvrir des univers variés et de mieux comprendre leur environnement. C’est aussi un moyen de reprendre goût à l’apprentissage, dans un cadre bienveillant où chaque progrès est valorisé. La lecture devient ainsi un fil conducteur vers la reconstruction de soi et l’élaboration d’un avenir choisi.</p>
+                    </div>
+                    <iframe id="video-e2c" src="https://www.youtube.com/embed/q8IXhr6b304?si=qzUDll6jLUhBsHHw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+            </article>
+            <div class="intertext">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bibliothèque E2C</title>
@@ -114,7 +120,14 @@
         <main>
             <article>
 
-                <h2>Offrir une seconde chance par la lecture et l’apprentissage</h2>
+                <h2>Offrir une seconde chance par la lecture et l’appren
+                        <p>Au-delà de l’apprentissage technique, l’E2C valorise la lecture comme un levier de développement personnel. Lire permet aux jeunes de se reconnecter à leur curiosité, de découvrir des univers variés et de mieux comprendre leur environnement. C’est aussi un moyen de reprendre goût à l’apprentissage, dans un cadre bienveillant où chaque progrès est valorisé. La lecture devient ainsi un fil conducteur vers la reconstruction de soi et l’élaboration d’un avenir choisi.</p>
+                    </div>
+                    <iframe id="video-e2c" src="https://www.youtube.com/embed/q8IXhr6b304?si=qzUDll6jLUhBsHHw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+            </article>
+            <div class="intertext">tissage</h2>
                 <div id="text1-contenant">
                     <div id="text1">
                         <p>L’École de la Deuxième Chance (E2C) Grand Lille accompagne les jeunes de 16 à 25 ans sortis du système scolaire sans diplôme ni qualification. Elle leur propose un parcours individualisé pour retrouver confiance en eux, construire un projet professionnel et renouer avec les apprentissages fondamentaux. La lecture y occupe une place centrale, car elle est à la fois un outil d’émancipation, de réflexion et d’ouverture sur le monde.</p>
@@ -148,7 +161,7 @@
 
                 <h2>La Prépa Numérique : lire, coder, créer</h2>
             <article>
-
+ 
             <article>
 
 
@@ -174,20 +187,10 @@
 <body>
     
    
-        
+         
     <!-- Zone du menu, en haut de la page-->
-    <nav>
-
-        <img id="logo" src="../src/logo2.png" alt="Logo E2C">
-        <div id="nav-bar">
-            <a class="nav-button" href="../contr./controller/gameController.phpoller/homeController.php">Accueil</a>
-            <a class="nav-button" href="../controller/libraryController.php">Bibliothèque</a>
-            <a class="nav-button" href="../controller/gameController.php">Détente</a>
-        </div>
-
-    </nav>
-    <!-- En tête stylé-->
     <?php
+        require_once("../view/_partials/_nav.php");
         require_once("../view/_partials/_header.php");
     ?>
     <!-- Zone peincipale - présentation de l'e2c et de Silence, On lit-->
