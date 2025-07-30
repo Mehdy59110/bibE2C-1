@@ -137,7 +137,7 @@ nav {
     border: var(--couleur-midfonce) 1px solid;
     border-radius: 10px;
     
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: start;
@@ -187,6 +187,45 @@ nav {
     border-radius: 5px;
     border: solid var(--couleur-claire) 2px;
     transition: background-color 500ms, color 1000ms, border 1000ms;}
+
+    /*flash message et footer*/
+    #flash-message {
+        position: fixed;
+        top: 1vh;
+        right: 43vw;
+        width: 50vw;
+
+        font-size: 1.6rem;
+
+
+        background-color: var(--couleur-fonce);
+        color: var(--couleur-midclaire);
+        border-radius: 15px;
+        padding: 10px;
+
+        box-shadow: black 2px 2px 4px 0;
+        user-select: none;
+
+        transition: right 1200ms;
+
+        z-index: 20;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0vh;
+        z-index: 20;
+
+        font-size: 1.2rem
+        width: 100vw;
+
+        padding: 5px;
+        background-color: black;
+        color: white;
+        border-top: white 1px solid;
+    }
+
+
 
 
 
